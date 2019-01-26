@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.28010.2041
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HPKIReaderLib", "HPKIReaderLib\HPKIReaderLib.csproj", "{2FF0EB0A-46D8-4405-B1CB-4F5228D11EB0}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TestUI01", "TestUI01\TestUI01.csproj", "{74CC13F5-86BE-4B48-A5C6-69D23BB9EB36}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{2FF0EB0A-46D8-4405-B1CB-4F5228D11EB0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2FF0EB0A-46D8-4405-B1CB-4F5228D11EB0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2FF0EB0A-46D8-4405-B1CB-4F5228D11EB0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2FF0EB0A-46D8-4405-B1CB-4F5228D11EB0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{74CC13F5-86BE-4B48-A5C6-69D23BB9EB36}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{74CC13F5-86BE-4B48-A5C6-69D23BB9EB36}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{74CC13F5-86BE-4B48-A5C6-69D23BB9EB36}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{74CC13F5-86BE-4B48-A5C6-69D23BB9EB36}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {8CB595DC-A8CA-4C82-80FB-EE891E360B75}
+	EndGlobalSection
+EndGlobal
