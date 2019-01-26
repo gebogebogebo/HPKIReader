@@ -49,7 +49,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="HPKIReader_private.cs" />
+    <Compile Include="HPKIReader_GetCardObjectsJISX6320.cs" />
     <Compile Include="HPKIReader_private2.cs" />
     <Compile Include="ICReaderLib\APDUresponse.cs" />
     <Compile Include="ICReaderLib\APDUstatus.cs" />

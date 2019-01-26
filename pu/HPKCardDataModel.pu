@@ -1,0 +1,33 @@
+@startuml
+
+package HPKIカード {
+
+    component Root as Card
+    component 電子認証用AP as HPKIAP2 <<E8:28:BD:08:0F:A0:00:00:03:91:00:00:00:00:00:02>>
+    component 電子署名用AP as HPKIAP1 <<E8:28:BD:08:0F:A0:00:00:03:91:00:00:00:00:00:01>>
+
+    cloud  "認証 に関するFILE"{
+        component 認証用PIN <<00:02>>
+        component [認証用鍵\n**Private Key**] as 認証用鍵 <<00:0C>>
+        component [認証用証明書\n include **Public Key**] as 認証用証明書 <<00:16>>
+    }
+
+    cloud  "署名 に関するFILE"{
+        component 署名用PIN as 署名用PIN <<00:02>>
+        component [署名用鍵\n**Private Key**] as 署名用鍵  <<00:0C>>
+        component [署名用証明書\n include **Public Key**] as 署名用証明書 <<00:16>>
+    }
+}
+
+Card ..> HPKIAP2
+Card ..> HPKIAP1
+
+HPKIAP2 ..> 認証用証明書
+HPKIAP2 ..> 認証用鍵
+HPKIAP2 ..> 認証用PIN
+
+HPKIAP1 ..> 署名用証明書
+HPKIAP1 ..> 署名用鍵
+HPKIAP1 ..> 署名用PIN
+
+@enduml
